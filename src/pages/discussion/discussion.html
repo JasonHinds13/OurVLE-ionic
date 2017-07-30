@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Discussions
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+  <ion-item *ngFor="let discussion of discussions">
+
+  <ion-card>
+  <ion-card-content>
+    <ion-card-title>
+      <ion-icon name="paper"></ion-icon> {{ discussion.title }}
+      </ion-card-title>
+      <p class="card-course-code">{{ discussion.code }}</p>
+      <p class="card-date">{{ discussion.date }}</p>
+      <br/><br/>
+    <p>
+      {{ discussion.details }}
+    </p>
+    <br/>
+    <p class="card-author">{{ discussion.author }}</p>
+  </ion-card-content>
+</ion-card>
+
+</ion-item>
+</ion-list>
+
+</ion-content>

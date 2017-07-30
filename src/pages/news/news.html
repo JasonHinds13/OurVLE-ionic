@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      News
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+  <ion-item *ngFor="let page of news">
+
+  <ion-card>
+  <ion-card-content>
+    <ion-card-title>
+      <ion-icon name="paper"></ion-icon> {{ page.title }}
+      </ion-card-title>
+      <p class="card-course-code">{{ page.code }}</p>
+      <p class="card-date">{{ page.date }}</p>
+      <br/><br/>
+    <p>
+      {{ page.details }}
+    </p>
+    <br/>
+    <p class="card-author">{{ page.author }}</p>
+  </ion-card-content>
+</ion-card>
+
+</ion-item>
+</ion-list>
+
+</ion-content>

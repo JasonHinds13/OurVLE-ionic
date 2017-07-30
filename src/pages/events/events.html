@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Events
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+  <ion-item *ngFor="let event of events">
+  <ion-card>
+  <ion-card-content>
+    <ion-card-title>
+      <ion-icon name="calendar"></ion-icon> {{ event.title }}
+      </ion-card-title>
+      <p class="card-course-code">{{ event.code }}</p>
+      <p class="card-date">{{ event.date }}</p>
+      <br/><br/>
+    <p class="card-description">
+      {{ event.details }}
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-item>
+
+</ion-list>
+
+</ion-content>

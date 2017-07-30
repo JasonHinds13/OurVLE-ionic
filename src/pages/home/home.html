@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      OurVLE
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding style="background-color: #F44336;">
+
+  <div style="margin-left: 7%; border-radius: 5px; padding: 5px; margin-top: 50%;">
+    <form>
+      <input name="username" type="text" placeholder="Username" style="text-align: center; border-radius: 5px; width: 250px; margin-top: 5px; margin-bottom: 5px;"/><br/>
+      <input name="password" type="password" placeholder="Password" style="text-align: center; border-radius: 5px; width: 250px; margin-bottom: 5px;"/><br/>
+      <button (click)="gotToTabs();" style="border-radius: 5px; width: 250px; margin-bottom: 5px; padding: 3px;">LogIn</button>
+    </form>
+  </div>
+
 </ion-content>

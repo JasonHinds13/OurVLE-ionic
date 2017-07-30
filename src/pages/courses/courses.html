@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Courses</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div (click)="goToCourse();" class="course-card" *ngFor="let course of courses">
+    <img class="course-img" src="https://camo.githubusercontent.com/1e6798a976ebcf977b616713a1fb1b1ee53e8e13/68747470733a2f2f7261772e6769746875622e636f6d2f656c61646e6176612f6d6174657269616c2d6c65747465722d69636f6e732f6d61737465722f646973742f706e672f582e706e67"/>
+    <p class="course-code">{{ course.code }}</p>
+    <p class="course-title">{{ course.title }}</p>
+  </div>
+
+</ion-content>
